@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>   
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    overflow:hidden; 
+    
+}
+html{
+    position:fixed;
+    font-size:62.5%;
+}
+body{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTltW2ap1SfQx7nS1WiyCrk5U2625KjCgPJyXOx4HTM69IukL4&s");
+    background-size:100% 100%;
+}
+
+.box1{
+    background:red;
+}
+
+.box2{
+    background:blue;
+}
+
+.box3{
+    background:green;
+}
+
+.box4{
+    background:yellow;
+}
+
+.box5{
+    background:orange;
+}
+
+.box6{
+    background:black;
+}
+
+.box7{
+    background:red;
+}
+
+.box8{
+    background:blue;
+}
+
+.box9{
+    background:green;
+}
+
+.box10{
+    background:yellow;
+}
+
+.box11{
+    background:orange;
+}
+
+.box12{
+    background:black;
+}
+
+
+.screen{
+    position:absolute;
+    top:3vh;
+    left:5vw;
+    width:90vw;
+    height:93vh;
+    background-color: #000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='4.7'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='13'/%3E%3Ccircle cx='539' cy='269' r='13'/%3E%3Ccircle cx='603' cy='493' r='13'/%3E%3Ccircle cx='731' cy='737' r='13'/%3E%3Ccircle cx='520' cy='660' r='13'/%3E%3Ccircle cx='309' cy='538' r='13'/%3E%3Ccircle cx='295' cy='764' r='13'/%3E%3Ccircle cx='40' cy='599' r='13'/%3E%3Ccircle cx='102' cy='382' r='13'/%3E%3Ccircle cx='127' cy='80' r='13'/%3E%3Ccircle cx='370' cy='105' r='13'/%3E%3Ccircle cx='578' cy='42' r='13'/%3E%3Ccircle cx='237' cy='261' r='13'/%3E%3Ccircle cx='390' cy='382' r='13'/%3E%3C/g%3E%3C/svg%3E");
+
+    border:2px solid purple;
+    display:grid;
+    place-items:center;
+    animation:anim 5s 11s ease-out both, anim1 0.5s  16s ease-out both;
+}
+
+@keyframes anim{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+   
+}
+@keyframes anim1{
+    from{
+        
+    }
+    to{
+        width:0vw;
+        left:100vw;
+    }
+   
+}
+
+.text{
+    width:auto;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    background-color:transparent ;
+    color:white;
+    flex-direction:column;
+    font-family: 'Neuton', serif;
+    font-size:4rem;
+    font-weight:900;
+    text-align:center;
+}
+
+.t{
+    color:#576574;
+    animation:text 5s 5s linear both;
+}
+
+@keyframes text{
+    
+    0%{
+        color:#576574;
+        
+    }
+    50%{
+        color:#fff;
+    }
+    90%{
+        color:#f1c40f;
+       
+    }
+    100%{
+        color:#f1c40f;
+        text-shadow: 0 0 1rem #d35400, 0 0 7rem #d35400;
+    }
+}
+
+.box{
+    width:80vw;
+    height:85vh;
+    margin:3vh 5vw;
+    color:white;
+    display:grid;
+    grid-template-rows:repeat(3,33%);
+    grid-template-columns:1fr 1fr;
+    grid-gap:0.5%;
+    padding:5vh 5vw;
+    padding-top:3vh;
+    background: rgba( 144, 19, 254, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box1{
+    background-image:url("https://t1.gstatic.com/images?q=tbn:ANd9GcRm1tSPzB3VHomocopufPVw_yJXKqdx_FKEqRngHVRbDL6g7T4O");
+   
+}
+.box2{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBHs4pOEY5D_31fcd6ZhF3hWAegBKh1nst4UEIu55PEEI1Ds0qmNa8wTZP&s=10");
+}
+.box3{
+    background-image:url("https://cdn.architecturendesign.net/wp-content/uploads/2018/05/AD-Hidden-Deep-Meanings-Illustrations-Destinyblue-21.jpg");
+}
+.box4{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8MGO-vSRRL6W2G37zskOJpqaAVhMZvRQLw&usqp=CAU");
+}
+.box5{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnirOmOa5P4X-9biLU8xDHS76hjxIl1gk_QA&usqp=CAU");
+}
+.box6{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT740xOdJQozxLgJIy15u5hfgUhLrTljYADvQ&usqp=CAU");
+}
+
+
+.bbox{
+    transition:all 1s;
+    text-align:center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    font-size:2rem;
+    padding:2rem;
+    font-weight:900;
+    background-size:100% 100%; 
+    border-radius:5%;
+     
+}
+
+p{
+    opacity:0;
+    transition:all 2s;
+    /*background-color:rgba(0, 0, 0, 0.5);*/
+    background:transparent;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.bbox:hover p{
+  opacity:1;
+  background: rgba( 0, 0, 0, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+}
+.bbox:hover{
+    transform:scale(1.2);
+    box-shadow:0 10px 20px -6px #000;
+}
+
+
+    </style> 
+   <script>
+     Swal.fire('Art🖼🎨 speaks📢🆎️where words🆎️ are unable⛔ to explain📝 Art🎨🖼 speaks its own language🆎️, soul🌬 to soul🌬, heart💖 to heart💝 \n Would be very glad😄 if you comment your favourite image from this Miscellany \n Dont forget to hover the images😅 \n It is quite simple😕 and boring😥 as I am a beginner😔')
+        </script>  
+        <main class="box">
+            <div class="bbox box1">
+            <p>Friends Set You Free</p>
+            </div>
+            <div class="bbox box2">
+             <p>I'm Complicated</p>   
+            </div>
+            <div class="bbox box3">
+             <p>Broken Window To The Soul</p>  
+            </div>
+            <div class="bbox box4">
+              <p>Paint Your Own Wings </p> 
+            </div>
+            <div class="bbox box5">
+              <p>There is always hope even when all else fails
+
+</p> 
+            </div>
+            <div class="bbox box6">
+              <p>One of us can be free</p> 
+            </div>
+        </main>
+        <main class="screen">
+            <div class="text">
+                <div class="t">M</div>
+                <div class="t">I</div>
+                <div class="t">S</div>
+                <div class="t">C</div>
+                <div class="t">E</div>
+                <div class="t">L</div>
+                <div class="t">L</div>
+                <div class="t">A</div>
+                <div class="t">N</div>
+                <div class="t">Y</div>
+            </div>
+        </main>
+    </body>
+</html>
